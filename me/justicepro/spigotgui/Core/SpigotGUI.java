@@ -131,7 +131,7 @@ public class SpigotGUI extends JFrame {
 	public static final String versionTag = "1.1";
 	public static final String versionName = "Ymerejliaf";
 
-	//public static ServerSettings serverSettings;
+	public static ServerSettings serverSettings;
 
 	/**
 	 * Launch the application.
@@ -174,7 +174,7 @@ public class SpigotGUI extends JFrame {
 			}
 
 		});
-		//setIconImage(ImageIO.read(getClass().getResourceAsStream("/spigotgui.png")));
+		setIconImage(ImageIO.read(getClass().getResourceAsStream("/spigotgui.png")));
 		setTitle("SpigotGUI Remastered (" + versionTag + " \"" + versionName + "\")");
 		module = new ModuleCore();
 		module.init();
@@ -2315,8 +2315,8 @@ public class SpigotGUI extends JFrame {
 
 			table.getModel().setValueAt(player.username, i, 0);
 			table.getModel().setValueAt(player.lastIP, i, 1);
-			/*table.getModel().setValueAt(player.whitelisted, i, 2);
-			table.getModel().setValueAt(player.opped, i, 3);*/
+			table.getModel().setValueAt(player.whitelisted, i, 2);
+			table.getModel().setValueAt(player.opped, i, 3);
 
 		}
 

@@ -34,17 +34,17 @@ public class Server {
 			if (isWindows) {
 				process = Runtime.getRuntime().exec("cmd");
 
-				//PrintWriter output = new PrintWriter(process.getOutputStream(), true);
+				PrintWriter output = new PrintWriter(process.getOutputStream(), true);
 
-//				output.println("java " + switches + " -jar \"" + jar.getAbsolutePath() + "\" " + arguments + " & exit");
+				output.println("java " + switches + " -jar \"" + jar.getAbsolutePath() + "\" " + arguments + " & exit");
 
 
 			}else {
 				process = Runtime.getRuntime().exec("sh");
 
-				//PrintWriter output = new PrintWriter(process.getOutputStream(), true);
+				PrintWriter output = new PrintWriter(process.getOutputStream(), true);
 
-//				output.println("java " + switches + " -jar \"" + jar.getAbsolutePath() + "\" " + arguments + " & exit");
+				output.println("java " + switches + " -jar \"" + jar.getAbsolutePath() + "\" " + arguments + " & exit");
 			}
 			
 			PrintWriter output = new PrintWriter(process.getOutputStream(), true);

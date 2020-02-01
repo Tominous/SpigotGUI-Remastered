@@ -21,7 +21,7 @@ public enum Theme {
 	Mint("Mint", "com.jtattoo.plaf.mint.MintLookAndFeel"),
 	Motif("Motif", "com.sun.java.swing.plaf.motif.MotifLookAndFeel"),
 	Smart("Smart", "com.jtattoo.plaf.smart.SmartLookAndFeel"),
-//	Windows_Classic("Windows Classic", "com.sun.java.swing.plaf.windows.WindowsClassicLookAndFeel"),
+	Windows_Classic("Windows Classic", "com.sun.java.swing.plaf.windows.WindowsClassicLookAndFeel"),
 	
 	;
 	
